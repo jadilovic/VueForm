@@ -3,7 +3,7 @@
     <h1>{{msg}}</h1>
     <h2>{{ label }}</h2>
     <div>
-        <input type="text" v-model="value">
+        <input type="text" v-model.trim.lazy="value">
         <p>Value: {{value}}</p>
     </div>
     <div class="address__field">
